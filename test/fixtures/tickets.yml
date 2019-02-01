@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  issued_date: 2019-02-01 16:43:19
+  source: MyString
+  destination: MyString
+  status: false
+
+two:
+  title: MyString
+  issued_date: 2019-02-01 16:43:19
+  source: MyString
+  destination: MyString
+  status: false
