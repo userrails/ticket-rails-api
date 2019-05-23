@@ -27,7 +27,9 @@ class TicketsController < ApplicationController
   end
 
   def destroy
-    @ticket.destroy
+    if @ticket.destroy
+      render json: @ticket.id
+    end
   end
 
   private
