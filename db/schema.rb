@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_01_105819) do
+ActiveRecord::Schema.define(version: 2019_05_23_100537) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tickets", force: :cascade do |t|
     t.string "title"
@@ -20,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_02_01_105819) do
     t.boolean "status", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "body"
   end
 
 end
